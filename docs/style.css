@@ -1,0 +1,153 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+/*Крестик в IE*/
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  position: fixed;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("03.jpeg") fixed center no-repeat;
+  -webkit-clip-path: circle(100px at center);
+          clip-path: circle(100px at center);
+  stroke: black;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  margin-top: 200vh;
+  background: #fff;
+  font-size: adaptive-fonts(30, 22);
+  padding: 20px 60px 20px 60px;
+}
+
+.title {
+  position: relative;
+  top: 250px;
+  z-index: 1;
+  text-align: center;
+  font-size: 3em;
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .title {
+    position: relative;
+    top: 150px;
+    z-index: 1;
+    text-align: center;
+    font-size: 3em;
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .title {
+    position: relative;
+    top: 150px;
+    z-index: 1;
+    text-align: center;
+    font-size: 3em;
+    width: 100%;
+  }
+}
